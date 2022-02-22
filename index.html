@@ -1,0 +1,63 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Frequency-Dependent Squeezing in LIGO</title>
+    <link rel="stylesheet" type="text/css" href="css/fc.css">
+</head>
+<body>
+<script src="js/jquery.min.js"></script>
+<script src="js/Chart.bundle.min.js"></script>
+<script type="text/javascript" src="js/classical.js"></script>
+<div class="page">
+    <canvas id="plot" width="800" height="550"></canvas>
+</div>
+<div class="page">
+    <form id="power" class="label-range">
+        <div class="range-name-col">
+            <div class="container">Arm power = </div>
+            <div class="label-container"><label></label> kW</div>
+        </div>
+        <div class="container"><input type="range" /></div>
+    </form>
+    <form id="sqz" class="label-range">
+        <div class="range-name-col">
+            <div class="container">Squeezing level = </div>
+            <div class="label-container"><label></label> dB</div>
+        </div>
+        <div class="container"><input type="range" /></div>
+    </form>
+    <form id="angle" class="label-range">
+        <div class="range-name-col">
+            <div class="container">Squeezing angle = </div>
+            <div class="label-container"><label></label> <sup>o</sup></div>
+        </div>
+        <div class="container"><input type="range" /></div>
+    </form>
+    <div id="fc-on-container">
+        <input type="checkbox" id="filter-cavity-on" /><label for="filter-cavity-on">Filter cavity</label><br /><br />
+    </div>
+    <form id="fc-length" class="label-range">
+        <div class="range-name-col">
+            <div class="container">FC length = </div>
+            <div class="label-container"><label></label> m</div>
+        </div>
+        <div class="container"><input type="range" /></div>
+    </form>
+    <form id="fc-input" class="label-range">
+        <div class="range-name-col">
+            <div class="container">FC input transmissivity = </div>
+            <div class="label-container"><label></label> ppm</div>
+        </div>
+        <div class="container"><input type="range" /></div>
+    </form>
+    <form id="fc-loss" class="label-range" style="display: none;">
+        <div class="range-name-col">
+            <div class="container">FC round-trip loss = </div>
+            <div class="label-container"><label></label> ppm</div>
+        </div>
+        <div class="container"><input type="range" /></div>
+    </form>
+</div>
+<script src="js/fc.js"></script>
+</body>
+</html>

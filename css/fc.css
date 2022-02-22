@@ -1,0 +1,65 @@
+body {
+  font-family: 'Verdana';
+  background-color: #AAAAAA;
+}
+
+.page {
+  width: 900px;
+  padding: 20px;
+  background-color: white;
+  border: 1px black solid;
+  border-radius: 15px;
+  margin: 15px auto;
+}
+
+.page form {
+  width: 100%;
+}
+
+.label-range {
+  display: flex;
+  align-items: center;
+}
+
+.label-range .range-name-col {
+  width: 300px;
+}
+
+.label-range div.label-container {
+  display: block;
+  float: right;
+  text-align: right;
+  height: 20px;
+  padding-right: 10px;
+}
+
+div.container {
+  float: left;
+  vertical-align: middle;
+}
+
+input[type="range"] {
+  display: inline-block;
+  -webkit-appearance: none;
+  background-color: #bdc3c7;
+  width: 300px;
+  height: 7px;
+  border-radius: 5px;
+  margin: 0 auto;
+  outline: 0;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-color: #3f51b5;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: .1s ease-in-out;
+}​
+  input[type="range"]::-webkit-slider-thumb:hover {
+    background-color: white;
+  }
+  input[type="range"]::-webkit-slider-thumb:active {
+    transform: scale(1.4);
+  }
